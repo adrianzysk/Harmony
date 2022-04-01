@@ -1,0 +1,226 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+}
+
+.flexRow{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flexColumn{
+    display: flex;
+    flex-direction: column;
+}
+
+.width{
+    max-width: 1339px;
+    margin: 0 auto;
+}
+
+.flexRow > a{
+    display: flex;
+    justify-content: center;
+    margin-right: 8px;
+}
+
+img{
+    margin: auto;
+}
+
+.marginRight{
+   margin-right: 36px;
+}
+
+.marginBottom{
+    margin-bottom: 32px;
+ }
+
+.spacing{
+    margin-top: 6px;
+    padding: 0 36px;
+}
+
+.inputContainer {
+    position: relative;
+}
+  
+.inputContainer > button {
+    all: unset;
+    position: absolute;
+    cursor: pointer;
+    top: 12px;
+    left: 15px;
+}
+  
+.inputContainer > input {
+    border: 1px solid #D6D6D6;
+    box-sizing: border-box;
+    width: 306px;
+    height: 48px;
+    padding-left: 50px;
+}
+
+.hourglass{
+    height: 0;
+    width: 0;
+    border: solid;
+    border-width:  12px 6.925px;
+    border-color: #8AC758 transparent #A9D04D transparent;
+    margin: auto 5px;
+}
+
+.alignCenter{
+    align-items: center;
+}
+
+.spaceAround{
+    justify-content: space-around;
+}
+
+.borderBox{
+    border: 1px solid #F5F5F5;
+    width: 146px;
+    height: 48px;
+}
+
+.borderTop{
+    border-top: 1px solid #F5F5F5;
+}
+
+.font{
+    font-weight: 500;
+    margin-top: 8px;
+}
+
+.menu{
+    justify-content: center;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.menu > button{
+    all: unset;
+    margin: 32px 24px;
+    cursor: pointer;
+    
+}
+
+.menu > button:hover{
+    color: #A9D04D;
+    transition: all 0.35s ease-in-out;
+}
+
+.clearButton{
+    all: unset;
+    cursor: pointer;
+}
+
+.search{
+    display: none;
+}
+
+span{
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.bottomBar{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 64px;
+    z-index: 1;
+    border-top: 1px solid #D6D6D6;
+    box-shadow: 0px 40px 50px 0px #000000;
+    background-color: #FFFFFF;
+}
+
+.bottomBar-box{
+    height: 64px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.bottomBarIcons{
+    margin: 0 36px;
+}
+
+.notDisplayed{
+    display: none;
+}
+
+.shopIconDisplay{
+    display: none;
+}
+
+.secondSearchInputBox{
+    display: flex;
+    justify-content: center
+}
+
+.maxWidth{
+    width: 99% !important;
+}
+
+.positionRelative{
+    position: relative;
+    z-index: 1
+}
+
+.countShopBox{
+    all: unset;
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #000000;
+    top: -15px;
+    right: -13px;
+    z-index: -1;
+    text-align: center;
+    font-family: "Ubuntu", sans-serif;
+    color: #FFFFFF;
+    font-weight: bold;
+    display: none;
+}
+
+@media screen and (max-width: 1024px) {
+    .notDisplayed{
+        display: flex;
+    }
+    .displayed{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .mobileDisplay{
+        display: flex;
+    }
+    .mobileNotDisplay{
+        display: none;
+    }
+    .marginRight{
+        margin-right: 6px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .spacing{
+        padding: 0 6px;
+    }
+    .bottomBarIcons{
+        margin: 0 16px;
+    }
+}

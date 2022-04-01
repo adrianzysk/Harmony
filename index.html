@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pl-Pl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Harmony site"
+    />
+    <link rel="stylesheet" href="index.css">
+    <title>Harmony</title>
+  </head>
+  <body onload="showCount()">
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <header>
+        <div class="flexColumn width spacing">
+            <div class="flexRow marginBottom">
+                <div class="flexRow">
+                    <a href="#">
+                        <img src="./svg/facebookIcon.svg" alt="Facebook Icon">
+                    </a>
+                    <a class="marginRight" href="instagram://user?username={USERNAME}">  
+                    <img src="./svg/instagramIcon.svg" alt="Instagram Icon">
+                    </a>
+                    <div class="flexRow">
+                        <a href="tel:+48697121324">
+                            <img src="./svg/phoneIcon.svg" alt="Phone Icon">
+                        </a>
+                        <p>Infolinia: 697 121 324</p>
+                    </div>
+                </div>
+                <div>
+                    <p>Darmowa dostawa od 299 zł</p>
+                </div>
+            </div>
+            <div class="flexRow marginBottom">
+                <form id="searchForm" class="inputContainer flexRow displayed">
+                    <button>
+                      <img src="./svg/searchIcon.svg" alt="Search Icon">
+                    </button>
+                    <input type="text" placeholder="Wpisz czego szukasz...">  
+                </form>
+                <div class="flexRow notDisplayed">
+                    <div class="flexColumn alignCenter marginRight">
+                        <button class="clearButton">
+                            <img src="./svg/menuIcon.svg" alt="Menu Icon">
+                        </button>
+                        <p class="font">Menu</p>
+                    </div>
+                    <div class="flexRow mobileNotDisplay">
+                        <div class="hourglass"></div>
+                        <img src="./svg/logoIcon.svg" alt="Logo Icon">
+                    </div>
+                </div>
+                <div class="flexRow displayed mobileDisplay">
+                    <div class="hourglass"></div>
+                    <img src="./svg/logoIcon.svg" alt="Logo Icon">
+                </div>
+                <div class="flexRow mobileNotDisplay">
+                    <div class="flexColumn alignCenter marginRight notDisplayed">
+                        <button class="clearButton" onclick="displaySearch()">
+                            <img src="./svg/searchIconGreen.svg" alt="Search Icon">
+                        </button>
+                        <p class="font">Szukaj</p>
+                    </div>
+                    <div class="flexColumn alignCenter marginRight">
+                        <button class="clearButton">
+                            <img src="./svg/accountIcon.svg" alt="Account Icon">
+                        </button>
+                        <p class="font">Konto</p>
+                    </div>
+                    <div class="flexColumn alignCenter marginRight">
+                        <button class="clearButton">
+                            <img src="./svg/likeIcon.svg" alt="Like Icon">
+                        </button>
+                        <p class="font">Ulubione</p>
+                    </div>
+                    <div class="flexRow borderBox spaceAround">
+                        <div class="flexColumn">
+                            <p>Twój Koszyk<br><span>9999,9 zł</span></p>
+                        </div>
+                        <div class="flexColumn">
+                            <button href="#"  class="clearButton positionRelative">
+                                <img src="./svg/shopIcon.svg" alt="Shop Icon">
+                                <input disabled id="count" type="text" value="99" class="countShopBox" onchange="showCount()">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="flexColumn alignCenter mobileDisplay shopIconDisplay">
+                    <a href="#" >
+                        <img src="./svg/shopIcon.svg" alt="Shop Icon">
+                    </a>
+                    <p class="font">Koszyk</p>
+                </div>
+            </div>
+        </div>
+        <nav class="flexRow borderTop menu displayed">
+            <button>Perfumy</button>
+            <button>Dla ciała</button>
+            <button>Dla domu</button>
+            <button>Twoje auto</button>
+            <button>Prezent personalizowany</button>
+            <button>Akcesoria</button>
+            <button>Promocje</button>
+        </nav>
+    </header>
+    <form id="search" class="search">
+        <div class="secondSearchInputBox">
+            <div class="inputContainer secondSearchInputBox maxWidth">
+                <button>
+                     <img src="./svg/searchIcon.svg" alt="Search Icon">
+                </button>
+                <input type="text" placeholder="Wpisz czego szukasz..." class="maxWidth">  
+            </div>
+        </div>
+    </form>
+    <div class="flexRow bottomBar shopIconDisplay mobileDisplay">
+        <div class="flexColumn bottomBarIcons">
+            <button class="clearButton">
+                <img src="./svg/menuIconBlack.svg" alt="Menu Icon">
+            </button>
+        </div>
+        <div class="flexColumn bottomBarIcons">
+            <button class="clearButton" onclick="displaySearch()">
+                <img src="./svg/searchIcon.svg" alt="Search Icon">
+            </button>
+        </div>
+        <div class="flexColumn bottomBarIcons">
+            <button class="clearButton">
+                <img src="./svg/BagIcon.svg" alt="Bag Icon">
+            </button>
+        </div>
+        <div class="flexColumn bottomBarIcons">
+            <button class="clearButton">
+                <img src="./svg/likeIconBlack.svg" alt="Like Icon">
+            </button>
+        </div>
+        <div class="flexColumn bottomBarIcons">
+            <button class="clearButton">
+                <img src="./svg/accountIconBlack.svg" alt="Account Icon">
+            </button>
+        </div>
+    </div>
+    <div class="bottomBar-box shopIconDisplay mobileDisplay"></div>
+    <script src="index.js"></script>
+  </body>
+</html>
