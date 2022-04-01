@@ -1,1 +1,1 @@
-# Harmony Just responsive header
+# Harmony only responsive header
